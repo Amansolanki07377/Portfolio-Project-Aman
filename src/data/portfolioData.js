@@ -312,7 +312,7 @@ export const projectsData = [
       { method: "PUT", path: "/api/students/{id}/", desc: "Update student grades, enrollment, and records" },
       { method: "DELETE", path: "/api/students/{id}/", desc: "Safe deletion with relational dependency checks" }
     ],
-    github: "https://github.com/Amansolanki07377/student-support-system",
+    github: "https://github.com/Amansolanki07377/Frontend/blob/main/Python/Student%20M%20S.py",
     demo: ""
   },
   {
