@@ -271,7 +271,7 @@ export const projectsData = [
       { method: "POST", path: "/api/v1/contact/", desc: "Public REST endpoint for verified message submission" }
     ],
     github: "https://github.com/Amansolanki07377/Frontend/tree/main/AI%20project%20antigrevity",
-    demo: "https://aman-portfolio-platform.vercel.app"
+    demo: "https://projectantigrevity.vercel.app/"
   },
   {
     id: "student-record-academic-api",
