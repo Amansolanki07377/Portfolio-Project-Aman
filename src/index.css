@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --color-primary-400: #5eead4;
+  --color-primary-500: #2dd4bf;
+  --color-primary-600: #14b8a6;
+  --color-accent-cyan: #67e8f9;
+  --color-accent-purple: #c084fc;
+  --color-accent-gold: #fbbf24;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    background:
+      radial-gradient(circle at top, rgba(45, 212, 191, 0.16), transparent 32%),
+      radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.12), transparent 28%),
+      #07131d;
+    color: #e2f8f6;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07131d;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(45, 212, 191, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(45, 212, 191, 0.5);
+}
+
+/* Glassmorphism subtle utility */
+.glass-card {
+  background: rgba(11, 23, 29, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(94, 234, 212, 0.14);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  background: rgba(13, 31, 36, 0.9);
+  border-color: rgba(45, 212, 191, 0.38);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(2, 6, 23, 0.8), 0 0 25px -4px rgba(20, 184, 166, 0.2);
+}
+
+/* Subtle grid background */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(94, 234, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(94, 234, 212, 0.05) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(251, 191, 36, 0.08) 1px, transparent 1px);
+}
+
+/* Glow gradient badges */
+.badge-glow {
+  box-shadow: 0 0 16px -2px rgba(20, 184, 166, 0.35);
+}
+
+/* Pulse keyframes for status dots */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.95); }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
