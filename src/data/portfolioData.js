@@ -274,6 +274,40 @@ export const projectsData = [
     demo: "https://projectantigrevity.vercel.app/"
   },
   {
+    id: "aman-solanki-developer-portfolio",
+    title: "Aman Solanki | Developer Portfolio",
+    role: "Frontend Developer",
+    featured: false,
+    category: "Portfolio Website",
+    tagline: "A responsive portfolio for showcasing development skills, projects, and experience",
+    tech: ["React.js", "JavaScript (ES6+)", "Tailwind CSS v4", "Vite", "Lucide React"],
+    description:
+      "Built a responsive developer portfolio with React and Vite to present professional experience, categorized skills, and featured projects. Interactive project details and a resume viewer help recruiters explore the work, while direct contact links make it easy to get in touch.",
+    features: [
+      "Responsive layout for desktop and mobile",
+      "Reusable React components for portfolio sections",
+      "Filterable skills grouped by category",
+      "Featured project cards with interactive detail modals",
+      "Resume preview and download actions",
+      "Contact form with input validation and feedback",
+      "Direct email, phone, GitHub, and LinkedIn links",
+      "Vite development server and production build"
+    ],
+    highlights: [
+      "Structured the site as reusable React sections, with portfolio content centralized in a data module.",
+      "Added interactive skill filters, project detail views, and an in-browser resume viewer.",
+      "Built with Vite and Tailwind CSS v4 for a responsive interface and streamlined production builds."
+    ],
+    architecture: {
+      client: "React single-page application",
+      components: "Reusable sections, project cards, and modal views",
+      styling: "Tailwind CSS v4 with responsive layouts",
+      build: "Vite development and production tooling"
+    },
+    github: "https://github.com/Amansolanki07377/Portfolio-Project-Aman",
+    demo: ""
+  },
+  {
     id: "student-record-academic-api",
     title: "Student Record & Academic Management API",
     role: "Backend Developer",
